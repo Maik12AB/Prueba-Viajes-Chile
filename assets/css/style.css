@@ -1,0 +1,27 @@
+
+body{
+    background-color: #000000;
+    font-family:'Puritan', sans-serif;
+    color:#ffffff;
+}
+.navbar {
+    background-color: rgba(13, 13, 13, 0);
+    transition: background-color 0.3s ease;
+}
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+.navbar-brand i {
+     margin-right: 8px;
+}
+.nav-link {
+    color: #ffffff !important;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+.nav-link:hover {
+     color:aqua !important;
+     font-weight: bold;
+     font-size: 1.8rem;
+}
