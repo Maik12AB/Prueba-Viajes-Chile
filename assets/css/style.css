@@ -4,8 +4,10 @@ body{
     font-family:'Puritan', sans-serif;
     color:#ffffff;
 }
+
+/*Seccion navbar*/
 .navbar {
-    background-color: rgba(13, 13, 13, 0);
+    background-color: rgba(0, 0, 0, 0);
     transition: background-color 0.3s ease;
 }
 .navbar-brand {
@@ -21,7 +23,73 @@ body{
     transition: color 0.3s ease;
 }
 .nav-link:hover {
-     color:aqua !important;
+     color:#00d5ff !important;
      font-weight: bold;
      font-size: 1.8rem;
+}
+
+/* Seccion Quienes somos*/
+#quienes-somos {
+    padding: 60px 0;
+}
+#quienes-somos h2 {
+    font-weight: 700;
+    color: #00d5ff;
+    margin-bottom: 40px;
+}
+.quienes-icon {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+    background-color: #00d5ff;
+
+}
+.quienes-texto {
+    font-weight: 300;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Seccion Destacados */
+#destacados {
+    padding: 60px 0;
+}
+#destacados h2 {
+    font-weight: 700;
+    color: #00d5ff;
+    margin-bottom: 40px;
+}
+.card {
+    background-color: #00d5ff;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+.card img {
+    height: 180px;
+    object-fit: cover;
+}
+.card-body {
+    padding: 20px;
+}
+.card-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #00333a;
+}
+.card-text {
+    font-weight: 300;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #ffffff;
+}
+.card:hover {
+    transform: scale(1.1);
+}
+@media (max-width: 767.98px) {
+     #quienes-somos {
+        display: none !important;
+    }
 }
