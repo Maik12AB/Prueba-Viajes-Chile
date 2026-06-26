@@ -220,7 +220,7 @@
     </section>
 
 <!--Footer-->
-    <footer class="bg-full">
+    <footer class="bg-info">
         <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-center bg-info " >
             <p class="footer-text">
                 <img src="assets/img/viajes.svg" class="img-svg"> VIAJES CHILE </p>
@@ -252,6 +252,19 @@
             var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
                 return new bootstrap.Tooltip(tooltipTriggerEl);
             });
+        });
+        
+        // Cierra el menú al hacer clic en un enlace o al scrollear
+        const navbarCollapse = document.getElementById("navbarNav");
+        document.querySelectorAll("#navbarNav .nav-link").forEach(link => {
+            link.addEventListener("click", () => {
+                bootstrap.Collapse.getOrCreateInstance(navbarCollapse).hide();
+            });
+        });
+        window.addEventListener("scroll", () => {
+            if (navbarCollapse.classList.contains("show")) {
+                bootstrap.Collapse.getOrCreateInstance(navbarCollapse).hide();
+            }
         });
     </script>
 </body>
