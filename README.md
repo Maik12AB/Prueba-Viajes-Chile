@@ -10,11 +10,6 @@ Landing page responsiva para una agencia de viajes ficticia llamada **Viajes Chi
 
 🔗 https://maik12ab.github.io/Prueba-Viajes-Chile/
 
-## 📸 Vista previa
-
-![Vista previa](assets/img/viajes-chile-preview.png)
-
-> *(Puedes reemplazar esta imagen por una captura de pantalla de la página.)*
 
 ## 🛠️ Tecnologías utilizadas
 
